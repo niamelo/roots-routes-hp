@@ -38,9 +38,7 @@ export default function Header() {
             onClick={() => setOpen(!open)}
             aria-label="メニューを開く"
           >
-            <span className="block w-6 h-0.5 bg-white mb-1"></span>
-            <span className="block w-6 h-0.5 bg-white mb-1"></span>
-            <span className="block w-6 h-0.5 bg-white"></span>
+            <Image src="/Vector.png" alt="メニューアイコン" width={48} height={48} className="w-12 h-12" />
           </button>
         </div>
       </div>
