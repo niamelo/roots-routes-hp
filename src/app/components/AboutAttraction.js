@@ -11,12 +11,12 @@ export default function AboutAttraction() {
             className="absolute left-0 top-0 w-[clamp(220px,50vw,450px)] h-full"
             style={{ background: "linear-gradient(to right, #F2A527 0%, #F2A527 85%, transparent 100%)" }}
           />
-          <span className="relative z-10 text-white text-[clamp(20px,5vw,30px)] tracking-wide px-6 text-left md:text-center">
+          <span className="relative z-10 text-white text-[clamp(15px,5vw,30px)] tracking-wide px-3 text-left md:text-center">
             現代的な学習環境
           </span>
         </div>
         {/* 説明テキスト */}
-        <div className="flex-1 text-[#545454] text-[clamp(15px,5vw,20px)] leading-tight text-left md:text-end md:pl-4 pt-2 md:pt-0">
+        <div className="flex-1 text-[#545454] text-[clamp(10px,3vw,18px)] leading-tight text-left md:text-end md:pl-4 pt-2 md:pt-0 z-10">
           明るく開放的なオフィス空間で、多様なバックグラウンドを持つチームメンバーが集まり、知識とアイデアを共有しています。
         </div>
       </div>

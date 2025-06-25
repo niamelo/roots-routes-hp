@@ -18,3 +18,28 @@ html, body {
   color: var(--foreground);
   font-family: 'Noto Sans JP', sans-serif;
 }
+
+@media (min-width: 450px) and (max-width: 1250px) {
+  .mv-thumb-img {
+    height: 50px !important;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1250px) {
+  .mv-thumb-img {
+    height: 100px !important;
+    width: auto !important;
+  }
+}
+@media (min-width: 440px) and (max-width: 769px) {
+  .mv-thumb-img {
+    height: 70px !important;
+    width: 140px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 973px) {
+  .service-title-small {
+    font-size: clamp(13px,2vw,16px) !important;
+  }
+}

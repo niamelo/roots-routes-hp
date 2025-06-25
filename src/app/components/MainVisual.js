@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function MainVisual() {
   return (
-    <section className="w-full relative flex h-[400px] md:h-[520px] lg:h-[720px] overflow-hidden" id="mainvisual">
+    <section className="w-full relative flex h-[400px] md:h-[700px] lg:h-[800px] overflow-hidden mv-auto-height" id="mainvisual">
       {/* 背景画像 */}
       <Image src="/fv.png" alt="ファーストビュー画像" fill priority className="object-cover w-full h-full absolute top-0 left-0 z-0" />
       {/* オーバーレイ */}
@@ -23,28 +23,28 @@ export default function MainVisual() {
       </div>
       {/* 右下サムネイル画像（スマホ時は下部全幅） */}
       <div
-        className="absolute z-30 flex w-full left-0 bottom-0 md:w-auto md:right-6 md:bottom-6 md:left-auto"
+        className="absolute z-30 flex w-full left-0 bottom-0 md:w-auto md:right-6 md:bottom-6 md:left-auto mv-thumb-below"
       >
         <Image
           src="/fv_sub3.png"
           alt="サブ画像3"
           width={229}
           height={124}
-          className="object-cover w-[clamp(110px,32vw,229px)] h-[clamp(50px,16vw,124px)]"
+          className="object-cover w-[clamp(110px,32vw,229px)] h-[clamp(50px,16vw,124px)] mv-thumb-img"
         />
         <Image
           src="/fv_sub2.png"
           alt="サブ画像2"
           width={227}
           height={124}
-          className="object-cover w-[clamp(110px,32vw,227px)] h-[clamp(50px,16vw,124px)]"
+          className="object-cover w-[clamp(110px,32vw,227px)] h-[clamp(50px,16vw,124px)] mv-thumb-img"
         />
         <Image
           src="/fv_sub1.png"
           alt="サブ画像1"
           width={129}
           height={124}
-          className="object-cover w-[clamp(110px,32vw,220px)] h-[clamp(50px,16vw,124px)]"
+          className="object-cover w-[clamp(110px,32vw,220px)] h-[clamp(50px,16vw,124px)] mv-thumb-img"
         />
       </div>
     </section>

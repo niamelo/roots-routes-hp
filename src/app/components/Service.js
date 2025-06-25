@@ -72,14 +72,18 @@ export default function Service() {
         <h2 className="text-[clamp(10px,6vw,70px)] font-bold z-10 flex items-center justify-center h-full" style={{ color: '#545454' }}>サービス</h2>
       </div>
       {/* サービスカード */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 w-full max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 w-full max-w-6xl mx-auto place-items-center items-stretch">
         {services.map((service, idx) => (
-          <div key={service.title} className="flex flex-row md:flex-row bg-white rounded-lg shadow p-6 md:p-7 min-h-[210px] w-[345px] h-[210px] md:w-auto md:h-auto items-center">
+          <div
+            key={service.title}
+            className="flex flex-row md:flex-row bg-white rounded-lg shadow p-6 md:p-7 w-full h-full md:w-full md:h-full items-start"
+            style={{ maxWidth: 500 }}
+          >
             {/* 左：テキスト */}
-            <div className="flex-1 flex flex-col justify-start">
+            <div className="flex-1 flex flex-col justify-start items-start">
               <div className="relative flex items-center h-10 mb-3">
                 <div className="absolute left-0 top-0 w-full h-full rounded" style={{ background: service.gradient }} />
-                <span className="relative z-10 text-white text-[clamp(15px,3vw,20px)] md:text-xl font-bold px-5 tracking-wide">{service.title}</span>
+                <span className="relative z-10 text-white text-[clamp(15px,3vw,20px)] md:text-xl font-bold px-5 tracking-wide service-title-small">{service.title}</span>
               </div>
               <div className="text-[#545454] text-[clamp(14px,3vw,20px)] leading-relaxed">{service.description}</div>
             </div>

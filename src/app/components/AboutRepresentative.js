@@ -22,7 +22,7 @@ export default function AboutRepresentative() {
         </div>
         <div className="flex justify-end items-center mt-4">
           <span className="text-[#F2A527] mr-2 text-[16px]">代表取締役CEO</span>
-          <span className="text-[#545454] text-[24px]">佐藤 健太</span>
+          <span className="text-[#545454] text-[24px]">岸 貴大</span>
         </div>
       </div>
     </div>
